@@ -1,6 +1,6 @@
 async function getAllMovies() {
   try {
-    const info = await fetch('http://ec2-107-23-31-103.compute-1.amazonaws.com/read_peliculas.php');
+    const info = await fetch('http://localhost/read_peliculas.php');
     const formatted = await info.json();
     const values = formatted.body.map((element) => {
       return element;
@@ -13,7 +13,7 @@ async function getAllMovies() {
 
 async function eliminarMovie(movieBody) {
   const value = JSON.stringify(movieBody);
-  const result = await fetch('http://ec2-107-23-31-103.compute-1.amazonaws.com/delete_pelicula.php', {
+  const result = await fetch('http://localhost/delete_pelicula.php', {
     method: "POST",
     body: value
   });

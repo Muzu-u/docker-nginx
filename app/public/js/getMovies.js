@@ -1,6 +1,6 @@
 (async function getAllMovies() {
   try {
-    const info = await fetch('http://ec2-107-23-31-103.compute-1.amazonaws.com/read_peliculas.php');
+    const info = await fetch('http://localhost/read_peliculas.php');
     const movies = await info.json();
     movies.body.map((element) => {
       element.id = parseInt(element.id);

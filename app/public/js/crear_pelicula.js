@@ -1,6 +1,6 @@
 async function createMovie(movieBody) {
   const value = JSON.stringify(movieBody);
-  const result = await fetch('http://ec2-107-23-31-103.compute-1.amazonaws.com/create_pelicula.php', {
+  const result = await fetch('http://localhost/create_pelicula.php', {
     method: "POST",
     body: value
   });
