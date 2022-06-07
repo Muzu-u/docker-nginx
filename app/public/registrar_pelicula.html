@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lure Films: Registro de peliculas</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/47ebee6827.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c0078485ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/crear_pelicula.js"></script>
+    <link rel="stylesheet" type "text/css" href="/styles/registro_pelicula.css">
+  </head>
+
+  <body>
+    <!--ALERT-->
+    <div class="alert">
+      <span class="closebtn" id="notification" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <strong id="textpelicula">Película añadida!</strong>
+    </div>
+
+    <header>
+      <a href="/index.php"
+        ><img id="logo" src="/images/logo-white.png" alt="logo-site"
+      /></a>
+    </header>
+    <section id="menu">
+      <img src="/images/wave-02.png" alt="" class="wave" />
+      <div class="container">
+        <div class="login-container">
+          <form class="form-login">
+            <h2>AÑADIR PELÍCULA</h2>
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="pelicula_titulo"
+                  class="input"
+                  type="text"
+                  name="titulo"
+                  placeholder="TÍTULO"
+                />
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <textarea
+                  id="descripcion"
+                  class="input"
+                  placeholder="DESCRIPCIÓN"
+                  name="descripcion"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="year"
+                  class="input"
+                  type="text"
+                  name="year"
+                  placeholder="AÑO"
+                />
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="generos"
+                  class="input"
+                  type="text"
+                  name="generos"
+                  placeholder="GÉNEROS"
+                />
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="reparto"
+                  class="input"
+                  type="text"
+                  name="reparto"
+                  placeholder="REPARTO"
+                />
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="director"
+                  class="input"
+                  type="text"
+                  name="director"
+                  placeholder="DIRECTOR"
+                />
+              </div>
+            </div>
+
+            <div class="input-div">
+              <div class="div">
+                <input
+                  id="poster_url"
+                  class="input"
+                  type="text"
+                  name="poster_url"
+                  placeholder="LINK POSTER"
+                />
+              </div>
+            </div>
+          </form>
+          <input
+            onclick="crearPelicula()"
+            type="submit"
+            class="btn"
+            value="Agregar pelicula"
+            name="agregar_pelicula"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

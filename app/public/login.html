@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lure Films: Login</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/47ebee6827.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c0078485ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type "text/css" href="/styles/login.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.php"><img id="logo" src="/images/logo-white.png" alt="logo-site" /></a>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn">x</a>
+            <div class="options">
+                <a href="catalogo.html">Catálogo</a>
+                <a id="page-login" href="login.html">Sign In</a>
+                <a id="page-profile" href="perfil.html">Perfil</a>
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-facebook-square fa-xl social-icon"></i>
+                <i class="fa-brands fa-instagram fa-xl social-icon"></i>
+                <i class="fa-brands fa-linkedin fa-xl social-icon"></i>
+                <i class="fa-brands fa-twitter-square fa-xl social-icon"></i>
+            </div>
+        </div>
+        <button class="openbtn">☰</button>
+    </header>
+    <section id="menu">
+        <img src="/images/wave-02.png" alt="" class="wave" />
+        <div class="container">
+            <div class="img">
+                <img src="/images/flame-40.png" alt="" />
+            </div>
+            <div class="login-container">
+                <form class="form-login" action="/index.php">
+                    <img class="avatar" src="https://i.ibb.co/H4f3Hkv/profile.png" alt="" />
+                    <h2>BIENVENIDO</h2>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"> </i>
+                        </div>
+                        <div>
+                            <input class="input mail" type="text" name="mail" placeholder="CORREO" />
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"> </i>
+                        </div>
+                        <div class="div">
+                            <input class="input" type="password" name="password" placeholder="CONTRASEÑA" />
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" name="login" value="Entrar" />
+                    <a href="#">OLVIDASTE LA CONTRASEÑA?</a>
+                    <a href="registro.html">REGISTRARSE</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="socialF">
+            <i class="fa-brands fa-facebook-square fa-xl social-icon"></i>
+            <i class="fa-brands fa-instagram fa-xl social-icon"></i>
+            <i class="fa-brands fa-linkedin fa-xl social-icon"></i>
+            <i class="fa-brands fa-twitter-square fa-xl social-icon"></i>
+        </div>
+        <div class="copyright">
+            ©SMARTBYTES TEAM 2022. TODOS LOS DERECHOS RESERVADOS.
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/sidebar.js"></script>
+</body>
+
+</html>
